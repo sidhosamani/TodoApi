@@ -24,6 +24,7 @@ var app = builder.Build();
 if (builder.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
+    //Enables swagger
     app.UseSwagger();
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TodoApi v1"));
 }
